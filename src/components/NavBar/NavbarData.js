@@ -3,7 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 
-export const SidebarData = [
+export const NavbarData = [
     {
         title: 'Home',
         path: '/',
@@ -11,20 +11,20 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Reports',
-        path: '/reports',
+        title: 'MSPaint',
+        path: '/mspaint',
         icon: <IoIcons.IoIosPaper />,
         cName: 'nav-text'
     },
     {
-        title: 'Products',
-        path: '/products',
+        title: 'DragDrop',
+        path: '/dragdrop',
         icon: <FaIcons.FaCartPlus />,
         cName: 'nav-text'
     },
     {
-        title: 'Team',
-        path: '/team',
+        title: 'Resize',
+        path: '/resize',
         icon: <IoIcons.IoMdPeople />,
         cName: 'nav-text'
     },
