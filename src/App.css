@@ -8,8 +8,9 @@
 }
 
 .home,
-.reports,
-.products {
+.dragdrop,
+.resize,
+.messages {
   display: flex;
   height: 90vh;
   align-items: center;
