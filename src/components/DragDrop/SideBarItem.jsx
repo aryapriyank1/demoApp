@@ -1,9 +1,11 @@
 import React from "react";
 import { useDrag } from "react-dnd";
 
+
 const SideBarItem = ({ data }) => {
   const [{ opacity }, drag] = useDrag({
     item: data,
+    type: data.type,
     collect: monitor => ({
       opacity: monitor.isDragging() ? 0.4 : 1
     })
