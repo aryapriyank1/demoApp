@@ -1,7 +1,8 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
+import * as GiIcons from 'react-icons/gi';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import * as RiIcons from 'react-icons/ri';
 
 export const NavbarData = [
     {
@@ -11,27 +12,21 @@ export const NavbarData = [
         cName: 'nav-text'
     },
     {
-        title: 'MSPaint',
-        path: '/mspaint',
-        icon: <IoIcons.IoIosPaper />,
-        cName: 'nav-text'
-    },
-    {
         title: 'DragDrop',
         path: '/dragdrop',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <RiIcons.RiDragDropLine />,
         cName: 'nav-text'
     },
     {
         title: 'Resize',
         path: '/resize',
-        icon: <IoIcons.IoMdPeople />,
+        icon: <GiIcons.GiResize />,
         cName: 'nav-text'
     },
     {
-        title: 'Messages',
-        path: '/messages',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        title: 'Forms',
+        path: '/forms',
+        icon: <IoIcons.IoIosPaper />,
         cName: 'nav-text'
     },
     {

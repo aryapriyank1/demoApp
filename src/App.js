@@ -4,10 +4,9 @@ import Navbar from './components/NavBar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import DragDrop from './pages/DragDrop';
-import MSPaint from './pages/MSPaint';
 import Resize from './pages/Resize';
-import Messages from './pages/Messages';
-
+import Forms from './pages/Forms';
+import Support from './pages/Support';
 
 function App() {
   return (
@@ -16,17 +15,17 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/mspaint' element={<MSPaint/>} />
         <Route path='/dragdrop' element={<DragDrop/>} />
         <Route path='/resize' element={<Resize/>} />
-        <Route path='/messages' element={<Messages/>} />
+        <Route path='/forms' element={<Forms/>} />
+        <Route path='/support' element={<Support/>} />
         </Routes>
         {/* <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/mspaint' component={MSPaint} />
           <Route path='/dragdrop' component={DragDrop} />
           <Route path='/resize' component={Resize} />
-          <Route path='/messages' component={Messages} />
+          <Route path='/forms' component={Forms} />
+          <Route path='/support' component={Support} />
         </Switch> */}
       
     </Router>
