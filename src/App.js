@@ -4,10 +4,8 @@ import Navbar from './components/NavBar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import DragDrop from './pages/DragDrop';
-import MSPaint from './pages/MSPaint';
 import Resize from './pages/Resize';
 import Playground from './pages/Playground';
-import Forms from './pages/Forms';
 import Support from './pages/Support';
 
 function App() {

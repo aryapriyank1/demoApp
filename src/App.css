@@ -10,7 +10,8 @@
 .home,
 .dragdrop,
 .resize,
-.messages {
+.forms,
+.support {
   display: flex;
   height: 90vh;
   align-items: center;
