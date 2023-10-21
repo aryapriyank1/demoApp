@@ -18,7 +18,6 @@ function App() {
           <Route path="/dragdrop" element={<DragDrop />} />
           <Route path="/resize" element={<Resize />} />
           <Route path="/playground" element={<Playground />} />
-          <Route path="/forms" element={<Forms />} />
           <Route path="/support" element={<Support />} />
         </Routes>
       </Router>
