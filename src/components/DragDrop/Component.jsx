@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
-import { useDrag } from "react-dnd";
-import { COMPONENT } from "./constants";
+import React, { useRef } from 'react';
+import { useDrag } from 'react-dnd';
+import { COMPONENT } from './constants';
 
 const style = {
-  border: "1px dashed black",
-  padding: "0.5rem 1rem",
-  backgroundColor: "white",
-  cursor: "move"
+  border: '1px dashed black',
+  padding: '0.5rem 1rem',
+  backgroundColor: 'white',
+  cursor: 'move'
 };
 const Component = ({ data, components, path }) => {
   const ref = useRef(null);
@@ -14,9 +14,7 @@ const Component = ({ data, components, path }) => {
   const [{ isDragging }, drag] = useDrag({
     item: { id: data.id, path },
     type: COMPONENT,
-    collect: monitor => ({
-      isDragging: monitor.isDragging()
-    })
+    collect: (monitor) => ({ isDragging: monitor.isDragging() })
   });
 
   const opacity = isDragging ? 0 : 1;
@@ -25,11 +23,7 @@ const Component = ({ data, components, path }) => {
   const component = components[data.id];
 
   return (
-    <div
-      ref={ref}
-      style={{ ...style, opacity }}
-      className="component draggable"
-    >
+    <div ref={ref} style={{ ...style, opacity }} className="component draggable">
       <div>{data.id}</div>
       <div>{component.content}</div>
     </div>

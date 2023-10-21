@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
-import { useDrag } from "react-dnd";
-import { ROW } from "./constants";
-import DropZone from "./DropZone";
-import Column from "./Column";
+import React, { useRef } from 'react';
+import { useDrag } from 'react-dnd';
+import { ROW } from './constants';
+import DropZone from './DropZone';
+import Column from './Column';
 
 const style = {};
 const Row = ({ data, components, handleDrop, path }) => {
@@ -15,7 +15,7 @@ const Row = ({ data, components, handleDrop, path }) => {
       path
     },
     type: ROW,
-    collect: monitor => ({
+    collect: (monitor) => ({
       isDragging: monitor.isDragging()
     })
   });
@@ -47,7 +47,7 @@ const Row = ({ data, components, handleDrop, path }) => {
               <DropZone
                 data={{
                   path: currentPath,
-                  childrenCount: data.children.length,
+                  childrenCount: data.children.length
                 }}
                 onDrop={handleDrop}
                 className="horizontalDrag"

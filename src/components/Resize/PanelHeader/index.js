@@ -15,7 +15,7 @@ const PanelHeader = ({ onDrag }) => {
   }, []);
 
   useEffect(() => {
-    const ratio = window.devicePixelRatio
+    const ratio = window.devicePixelRatio;
 
     const handleMouseMove = (e) => onDrag(e.movementX / ratio, e.movementY / ratio);
 
@@ -35,8 +35,6 @@ const PanelHeader = ({ onDrag }) => {
       header
     </div>
   );
-}
+};
 
 export default PanelHeader;
-
-

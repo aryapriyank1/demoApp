@@ -4,40 +4,40 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 
 export const NavbarData = [
-    {
-        title: 'Home',
-        path: '/',
-        icon: <AiIcons.AiFillHome />,
-        cName: 'nav-text'
-    },
-    {
-        title: 'MSPaint',
-        path: '/mspaint',
-        icon: <IoIcons.IoIosPaper />,
-        cName: 'nav-text'
-    },
-    {
-        title: 'DragDrop',
-        path: '/dragdrop',
-        icon: <FaIcons.FaCartPlus />,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Resize',
-        path: '/resize',
-        icon: <IoIcons.IoMdPeople />,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Messages',
-        path: '/messages',
-        icon: <FaIcons.FaEnvelopeOpenText />,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Support',
-        path: '/support',
-        icon: <IoIcons.IoMdHelpCircle />,
-        cName: 'nav-text'
-    }
+  {
+    title: 'Home',
+    path: '/',
+    icon: <AiIcons.AiFillHome />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'DragDrop',
+    path: '/dragdrop',
+    icon: <RiIcons.RiDragDropLine />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Resize',
+    path: '/resize',
+    icon: <GiIcons.GiResize />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Playground',
+    path: '/playground',
+    icon: <GiIcons.GiResize />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Forms',
+    path: '/forms',
+    icon: <IoIcons.IoIosPaper />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Support',
+    path: '/support',
+    icon: <IoIcons.IoMdHelpCircle />,
+    cName: 'nav-text'
+  }
 ];

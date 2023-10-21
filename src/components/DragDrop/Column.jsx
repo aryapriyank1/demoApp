@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
-import { useDrag } from "react-dnd";
-import { COLUMN } from "./constants";
-import DropZone from "./DropZone";
-import Component from "./Component";
+import React, { useRef } from 'react';
+import { useDrag } from 'react-dnd';
+import { COLUMN } from './constants';
+import DropZone from './DropZone';
+import Component from './Component';
 
 const style = {};
 const Column = ({ data, components, handleDrop, path }) => {
@@ -25,21 +25,12 @@ const Column = ({ data, components, handleDrop, path }) => {
 
   const renderComponent = (component, currentPath) => {
     return (
-      <Component
-        key={component.id}
-        data={component}
-        components={components}
-        path={currentPath}
-      />
+      <Component key={component.id} data={component} components={components} path={currentPath} />
     );
   };
 
   return (
-    <div
-      ref={ref}
-      style={{ ...style, opacity }}
-      className="base draggable column"
-    >
+    <div ref={ref} style={{ ...style, opacity }} className="base draggable column">
       {data.id}
       {data.children.map((component, index) => {
         const currentPath = `${path}-${index}`;
@@ -58,10 +49,7 @@ const Column = ({ data, components, handleDrop, path }) => {
         );
       })}
       <DropZone
-        data={{
-          path: `${path}-${data.children.length}`,
-          childrenCount: data.children.length
-        }}
+        data={{ path: `${path}-${data.children.length}`, childrenCount: data.children.length }}
         onDrop={handleDrop}
         isLast
       />

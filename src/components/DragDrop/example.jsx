@@ -1,19 +1,19 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback } from 'react';
 
-import DropZone from "./DropZone";
-import TrashDropZone from "./TrashDropZone";
-import SideBarItem from "./SideBarItem";
-import Row from "./Row";
-import initialData from "./initial-data";
+import DropZone from './DropZone';
+import TrashDropZone from './TrashDropZone';
+import SideBarItem from './SideBarItem';
+import Row from './Row';
+import initialData from './initial-data';
 import {
   handleMoveWithinParent,
   handleMoveToDifferentParent,
   handleMoveSidebarComponentIntoParent,
   handleRemoveItemFromLayout
-} from "./helpers";
+} from './helpers';
 
-import { SIDEBAR_ITEMS, SIDEBAR_ITEM, COMPONENT, COLUMN } from "./constants";
-import shortid from "shortid";
+import { SIDEBAR_ITEMS, SIDEBAR_ITEM, COMPONENT, COLUMN } from './constants';
+import shortid from 'shortid';
 
 const Container = () => {
   const initialLayout = initialData.layout;
@@ -23,7 +23,7 @@ const Container = () => {
 
   const handleDropToTrashBin = useCallback(
     (dropZone, item) => {
-      const splitItemPath = item.path.split("-");
+      const splitItemPath = item.path.split('-');
       setLayout(handleRemoveItemFromLayout(layout, splitItemPath));
     },
     [layout]
@@ -31,11 +31,11 @@ const Container = () => {
 
   const handleDrop = useCallback(
     (dropZone, item) => {
-      console.log('dropZone', dropZone)
-      console.log('item', item)
+      console.log('dropZone', dropZone);
+      console.log('item', item);
 
-      const splitDropZonePath = dropZone.path.split("-");
-      const pathToDropZone = splitDropZonePath.slice(0, -1).join("-");
+      const splitDropZonePath = dropZone.path.split('-');
+      const pathToDropZone = splitDropZonePath.slice(0, -1).join('-');
 
       const newItem = { id: item.id, type: item.type };
       if (item.type === COLUMN) {
@@ -57,52 +57,30 @@ const Container = () => {
           ...components,
           [newComponent.id]: newComponent
         });
-        setLayout(
-          handleMoveSidebarComponentIntoParent(
-            layout,
-            splitDropZonePath,
-            newItem
-          )
-        );
+        setLayout(handleMoveSidebarComponentIntoParent(layout, splitDropZonePath, newItem));
         return;
       }
 
       // move down here since sidebar items dont have path
-      const splitItemPath = item.path.split("-");
-      const pathToItem = splitItemPath.slice(0, -1).join("-");
+      const splitItemPath = item.path.split('-');
+      const pathToItem = splitItemPath.slice(0, -1).join('-');
 
       // 2. Pure move (no create)
       if (splitItemPath.length === splitDropZonePath.length) {
         // 2.a. move within parent
         if (pathToItem === pathToDropZone) {
-          setLayout(
-            handleMoveWithinParent(layout, splitDropZonePath, splitItemPath)
-          );
+          setLayout(handleMoveWithinParent(layout, splitDropZonePath, splitItemPath));
           return;
         }
 
         // 2.b. OR move different parent
         // TODO FIX columns. item includes children
-        setLayout(
-          handleMoveToDifferentParent(
-            layout,
-            splitDropZonePath,
-            splitItemPath,
-            newItem
-          )
-        );
+        setLayout(handleMoveToDifferentParent(layout, splitDropZonePath, splitItemPath, newItem));
         return;
       }
 
       // 3. Move + Create
-      setLayout(
-        handleMoveToDifferentParent(
-          layout,
-          splitDropZonePath,
-          splitItemPath,
-          newItem
-        )
-      );
+      setLayout(handleMoveToDifferentParent(layout, splitDropZonePath, splitItemPath, newItem));
     },
     [layout, components]
   );

@@ -4,11 +4,9 @@ import Panel from '../components/Resize/Panel';
 function Resize() {
   return (
     <>
-      <Panel>
-        content
-      </Panel>
+      <Panel>content</Panel>
     </>
-  )
+  );
 }
 
-export default Resize
+export default Resize;
