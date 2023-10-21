@@ -11,7 +11,7 @@ const Resizer = ({ onResize }) => {
     const handleMouseMove = (e) => {
       if (!direction) return;
 
-      const ratio = window.devicePixelRatio
+      const ratio = window.devicePixelRatio;
 
       onResize(direction, e.movementX / ratio, e.movementY / ratio);
     };
@@ -47,7 +47,7 @@ const Resizer = ({ onResize }) => {
       <div className="top" onMouseDown={handleMouseDown(Direction.Top)}></div>
 
       <div className="top-right" onMouseDown={handleMouseDown(Direction.TopRight)}></div>
-      
+
       <div className="right" onMouseDown={handleMouseDown(Direction.Right)}></div>
 
       <div className="right-bottom" onMouseDown={handleMouseDown(Direction.BottomRight)}></div>
@@ -62,6 +62,3 @@ const Resizer = ({ onResize }) => {
 };
 
 export default Resizer;
-
-
-

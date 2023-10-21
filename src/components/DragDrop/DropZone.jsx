@@ -1,7 +1,7 @@
-import React from "react";
-import classNames from "classnames";
-import { useDrop } from "react-dnd";
-import { COMPONENT, SIDEBAR_ITEM, ROW, COLUMN } from "./constants";
+import React from 'react';
+import classNames from 'classnames';
+import { useDrop } from 'react-dnd';
+import { COMPONENT, SIDEBAR_ITEM, ROW, COLUMN } from './constants';
 
 const ACCEPTS = [SIDEBAR_ITEM, COMPONENT, ROW, COLUMN];
 
@@ -13,7 +13,7 @@ const DropZone = ({ data, onDrop, isLast, className }) => {
     },
     canDrop: (item, monitor) => {
       const dropZonePath = data.path;
-      const splitDropZonePath = dropZonePath.split("-");
+      const splitDropZonePath = dropZonePath.split('-');
       const itemPath = item.path;
 
       // sidebar items can always be dropped anywhere
@@ -24,17 +24,13 @@ const DropZone = ({ data, onDrop, isLast, className }) => {
         return true;
       }
 
-      const splitItemPath = itemPath.split("-");
+      const splitItemPath = itemPath.split('-');
 
       // limit columns when dragging from one row to another row
       const dropZonePathRowIndex = splitDropZonePath[0];
       const itemPathRowIndex = splitItemPath[0];
       const diffRow = dropZonePathRowIndex !== itemPathRowIndex;
-      if (
-        diffRow &&
-        splitDropZonePath.length === 2 &&
-        data.childrenCount >= 3
-      ) {
+      if (diffRow && splitDropZonePath.length === 2 && data.childrenCount >= 3) {
         return false;
       }
 
@@ -47,10 +43,10 @@ const DropZone = ({ data, onDrop, isLast, className }) => {
 
       // Current area
       if (splitItemPath.length === splitDropZonePath.length) {
-        const pathToItem = splitItemPath.slice(0, -1).join("-");
+        const pathToItem = splitItemPath.slice(0, -1).join('-');
         const currentItemIndex = Number(splitItemPath.slice(-1)[0]);
 
-        const pathToDropZone = splitDropZonePath.slice(0, -1).join("-");
+        const pathToDropZone = splitDropZonePath.slice(0, -1).join('-');
         const currentDropZoneIndex = Number(splitDropZonePath.slice(-1)[0]);
 
         if (pathToItem === pathToDropZone) {
@@ -69,14 +65,7 @@ const DropZone = ({ data, onDrop, isLast, className }) => {
 
   const isActive = isOver && canDrop;
   return (
-    <div
-      className={classNames(
-        "dropZone",
-        { active: isActive, isLast },
-        className
-      )}
-      ref={drop}
-    />
+    <div className={classNames('dropZone', { active: isActive, isLast }, className)} ref={drop} />
   );
 };
 export default DropZone;

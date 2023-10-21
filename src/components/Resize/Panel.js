@@ -82,25 +82,20 @@ const Panel = ({ children }) => {
 
       default:
         break;
-      }
+    }
   };
 
   return (
     <div className="panel" ref={panelRef}>
       <div className="panel__container">
         <Resizer onResize={handleResize} />
-        
+
         <PanelHeader onDrag={handleDrag} />
 
-        <div className="panel__content">
-          {children}
-        </div>
+        <div className="panel__content">{children}</div>
       </div>
     </div>
   );
 };
 
 export default Panel;
-
-
-

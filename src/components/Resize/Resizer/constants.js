@@ -6,5 +6,5 @@ export const Direction = {
   Bottom: 'bottom',
   BottomLeft: 'bottomLeft',
   BottomRight: 'bottomRight',
-  Left: 'left',
+  Left: 'left'
 };
