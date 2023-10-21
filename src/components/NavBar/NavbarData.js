@@ -30,6 +30,12 @@ export const NavbarData = [
     cName: 'nav-text'
   },
   {
+    title: 'Forms',
+    path: '/forms',
+    icon: <IoIcons.IoIosPaper />,
+    cName: 'nav-text'
+  },
+  {
     title: 'Support',
     path: '/support',
     icon: <IoIcons.IoMdHelpCircle />,
