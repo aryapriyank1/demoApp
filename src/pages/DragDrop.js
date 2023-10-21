@@ -9,9 +9,6 @@ import '../components/DragDrop/styles.css';
 function DragDrop() {
   return (
     <>
-      {/* <div className='dragdrop'>
-        <h1>DragDrop</h1>
-      </div> */}
       <DndProvider backend={Backend}>
         <Example />
       </DndProvider>
