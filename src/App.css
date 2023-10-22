@@ -11,6 +11,7 @@
 .dragdrop,
 .resize,
 .forms,
+.flexlayout,
 .support {
   display: flex;
   height: 90vh;

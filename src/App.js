@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import DragDrop from './pages/DragDrop';
 import Resize from './pages/Resize';
 import Playground from './pages/Playground';
+import FlexLayout from './pages/FlexLayout';
 import Forms from './pages/Forms';
 import Support from './pages/Support';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/dragdrop" element={<DragDrop />} />
           <Route path="/resize" element={<Resize />} />
           <Route path="/playground" element={<Playground />} />
+          <Route path="/flexlayout" element={<FlexLayout />} />
           <Route path="/forms" element={<Forms />} />
           <Route path="/support" element={<Support />} />
         </Routes>
