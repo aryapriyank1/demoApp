@@ -1,9 +1,10 @@
 import React from 'react';
-import * as GiIcons from 'react-icons/gi';
 import * as AiIcons from 'react-icons/ai';
+import * as BsIcons from 'react-icons/bs';
+import * as CgIcons from 'react-icons/cg';
+import * as GiIcons from 'react-icons/gi';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
-import * as CgIcons from 'react-icons/cg';
 import * as TbIcons from 'react-icons/tb';
 
 export const NavbarData = [
@@ -38,9 +39,9 @@ export const NavbarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Forms',
-    path: '/forms',
-    icon: <IoIcons.IoIosPaper />,
+    title: 'GridLayout',
+    path: '/gridlayout',
+    icon: <BsIcons.BsGrid1X2 />,
     cName: 'nav-text'
   },
   {

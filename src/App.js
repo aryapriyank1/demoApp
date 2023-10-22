@@ -7,7 +7,7 @@ import DragDrop from './pages/DragDrop';
 import Resize from './pages/Resize';
 import Playground from './pages/Playground';
 import FlexLayout from './pages/FlexLayout';
-import Forms from './pages/Forms';
+import GridLayout from './pages/GridLayout';
 import Support from './pages/Support';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/resize" element={<Resize />} />
           <Route path="/playground" element={<Playground />} />
           <Route path="/flexlayout" element={<FlexLayout />} />
-          <Route path="/forms" element={<Forms />} />
+          <Route path="/gridlayout" element={<GridLayout />} />
           <Route path="/support" element={<Support />} />
         </Routes>
       </Router>

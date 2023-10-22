@@ -8,9 +8,6 @@
 }
 
 .home,
-.dragdrop,
-.resize,
-.forms,
 .support {
   display: flex;
   height: 90vh;
