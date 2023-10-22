@@ -3,6 +3,7 @@ import * as GiIcons from 'react-icons/gi';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
+import * as CgIcons from 'react-icons/cg';
 
 export const NavbarData = [
   {
@@ -27,6 +28,12 @@ export const NavbarData = [
     title: 'Playground',
     path: '/playground',
     icon: <GiIcons.GiResize />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'FlexLayout',
+    path: '/flexlayout',
+    icon: <CgIcons.CgDisplayFlex />,
     cName: 'nav-text'
   },
   {
