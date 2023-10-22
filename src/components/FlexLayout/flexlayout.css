@@ -11,7 +11,7 @@ body {
   right: 0px;
   bottom: 0px;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 12px;
   font-family: Arial, sans-serif;
 }
