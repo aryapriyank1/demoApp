@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
 import * as CgIcons from 'react-icons/cg';
+import * as TbIcons from 'react-icons/tb';
 
 export const NavbarData = [
   {
@@ -27,7 +28,7 @@ export const NavbarData = [
   {
     title: 'Playground',
     path: '/playground',
-    icon: <GiIcons.GiResize />,
+    icon: <TbIcons.TbDragDrop />,
     cName: 'nav-text'
   },
   {

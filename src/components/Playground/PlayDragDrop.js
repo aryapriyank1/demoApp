@@ -60,11 +60,13 @@ function PlayDragDrop() {
   return (
     <div className="play-row">
       <div className="column-left">
+        <h1>Drag</h1>
         {PictureList.map((picture) => {
           return <Picture url={picture.url} id={picture.id} />;
         })}
       </div>
       <div className="column-right" ref={drop}>
+        <h1>Drop</h1>
         {board.map((picture) => {
           return <Picture url={picture.url} id={picture.id} />;
         })}
