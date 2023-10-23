@@ -1,7 +1,7 @@
 import React from 'react';
-import * as _FlexLayout from 'flexlayout-react';
+import * as FlexLayout from 'flexlayout-react';
 import 'flexlayout-react/style/light.css';
-import '../components/FlexLayout/flexlayout.css';
+import '../components/SimpleFlex/simpleflex.css';
 
 const json = {
   global: { tabEnableClose: false },
@@ -66,10 +66,10 @@ const json = {
   }
 };
 
-class FlexLayout extends React.Component {
+class SimpleFlex extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { model: _FlexLayout.Model.fromJson(json) };
+    this.state = { model: FlexLayout.Model.fromJson(json) };
   }
 
   factory(node) {
@@ -79,8 +79,8 @@ class FlexLayout extends React.Component {
     }
   }
   render() {
-    return <_FlexLayout.Layout model={this.state.model} factory={this.factory.bind(this)} />;
+    return <FlexLayout.Layout model={this.state.model} factory={this.factory.bind(this)} />;
   }
 }
 
-export default FlexLayout;
+export default SimpleFlex;

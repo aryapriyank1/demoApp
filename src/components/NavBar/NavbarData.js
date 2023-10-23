@@ -2,8 +2,8 @@ import React from 'react';
 import * as AiIcons from 'react-icons/ai';
 import * as BsIcons from 'react-icons/bs';
 import * as CgIcons from 'react-icons/cg';
+import * as FiIcons from 'react-icons/fi';
 import * as GiIcons from 'react-icons/gi';
-import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
 import * as TbIcons from 'react-icons/tb';
 
@@ -45,9 +45,9 @@ export const NavbarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: 'SimpleFlex',
+    path: '/simpleflex',
+    icon: <FiIcons.FiLayout />,
     cName: 'nav-text'
   }
 ];

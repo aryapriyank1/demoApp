@@ -8,8 +8,7 @@
   /* overflow-y: scroll; */
 }
 
-.home,
-.support {
+.home {
   display: flex;
   height: 90vh;
   align-items: center;

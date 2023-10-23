@@ -24,11 +24,11 @@ export default class AddRemoveLayout extends React.PureComponent {
   static defaultProps = {
     className: 'layout',
     items: 2,
-    cols: { lg: 4 },
+    cols: { lg: 4, md: 4, sm: 4, xs: 4, xxs: 4 },
     rowHeight: 20,
     onLayoutChange: function () {},
+    // compactType: 'vertical'
     compactType: 'horizontal'
-    // verticalCompact: false,
   };
 
   constructor(props) {
