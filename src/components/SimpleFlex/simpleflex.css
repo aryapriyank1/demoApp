@@ -1,0 +1,32 @@
+body {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin: 0px;
+}
+
+#container {
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  /* overflow: hidden; */
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.flexpanel {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #555;
+  box-sizing: border-box;
+}
+
+.flexlayout__layout {
+  top: 80px;
+  overflow: visible;
+}

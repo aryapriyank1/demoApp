@@ -8,7 +8,7 @@ import Resize from './pages/Resize';
 import Playground from './pages/Playground';
 import FlexLayout from './pages/FlexLayout';
 import GridLayout from './pages/GridLayout';
-import Support from './pages/Support';
+import SimpleFlex from './pages/SimpleFlex';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Route path="/playground" element={<Playground />} />
           <Route path="/flexlayout" element={<FlexLayout />} />
           <Route path="/gridlayout" element={<GridLayout />} />
-          <Route path="/support" element={<Support />} />
+          <Route path="/simpleflex" element={<SimpleFlex />} />
         </Routes>
       </Router>
     </>
