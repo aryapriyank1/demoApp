@@ -1,0 +1,35 @@
+.flexapp {
+  display: flex;
+  /* flex-direction: row;
+  flex-grow: 1; */
+}
+
+.toolbar {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+
+/* .contents {
+   flex-grow: 1;
+  left: 0;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  height: 100%;
+  border: 1px solid #ddd; 
+
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #555;
+  box-sizing: border-box;
+} */
+
+.flexlayout__layout {
+  top: 120px;
+  overflow: visible;
+}

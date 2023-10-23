@@ -1,9 +1,9 @@
-body {
+/* body {
   height: 100%;
   width: 100%;
   position: fixed;
   margin: 0px;
-}
+} */
 
 #container {
   left: 0px;
@@ -27,6 +27,6 @@ body {
 }
 
 .flexlayout__layout {
-  top: 80px;
+  top: 125px;
   overflow: visible;
 }
