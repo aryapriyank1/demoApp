@@ -27,7 +27,6 @@ export default function makeLayout(Layout) {
         const name = l.i === '__dropping-elem__' ? 'drop' : l.i;
         return (
           <div className="layoutItem" key={l.i}>
-            {/* <b style="margin-left: 210px">{name}</b> */}
             <b className="previewText">{name}</b>
             {`: [${l.x}, ${l.y}, ${l.w}, ${l.h}]`}
           </div>
@@ -70,7 +69,7 @@ export default function makeLayout(Layout) {
                       left: `${230 * l.x + 20}px`,
                       top: `${30 * l.y + 80}px`,
                       width: `440px`,
-                      height: `40px`,
+                      height: `${20 * l.h}px`,
                       background: '#f0f0f0'
                     };
                     return (

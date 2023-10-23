@@ -5,6 +5,7 @@ import TrashDropZone from './TrashDropZone';
 import SideBarItem from './SideBarItem';
 import Row from './Row';
 import initialData from './initial-data';
+
 import {
   handleMoveWithinParent,
   handleMoveToDifferentParent,

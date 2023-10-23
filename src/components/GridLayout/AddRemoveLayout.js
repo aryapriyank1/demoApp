@@ -14,13 +14,6 @@ const StyledButton = styled.button`
  * This layout demonstrates how to use a grid with a dynamic number of elements.
  */
 export default class AddRemoveLayout extends React.PureComponent {
-  // static defaultProps = {
-  //   className: 'layout',
-  //   cols: { lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 },
-  //   rowHeight: 100,
-  //   compactType: 'horizontal'
-  // };
-
   static defaultProps = {
     className: 'layout',
     items: 2,
@@ -59,20 +52,9 @@ export default class AddRemoveLayout extends React.PureComponent {
       top: 0,
       cursor: 'pointer'
     };
-    // const i = el.add ? '+' : el.i;
     const i = el.i;
     return (
       <div key={i} data-grid={el}>
-        {/* {el.add ? (
-          <span
-            className="add text"
-            onClick={this.onAddItem}
-            title="You can add an item by clicking here, too.">
-            Add +
-          </span>
-        ) : (
-          <span className="text">{i}</span>
-        )} */}
         <span className="text">{i}</span>
         <span className="remove" style={removeStyle} onClick={this.onRemoveItem.bind(this, i)}>
           x
@@ -82,10 +64,8 @@ export default class AddRemoveLayout extends React.PureComponent {
   }
 
   onAddItem() {
-    /*eslint no-console: 0*/
-    // console.log('adding', 'n' + this.state.newCounter);
     this.setState({
-      // Add a new item. It must have a unique key!
+      // Add a new item. It must have a unique key
       items: this.state.items.concat({
         i: this.state.newCounter,
         x: (this.state.items.length * 2) % (this.state.cols || 12),
@@ -119,7 +99,6 @@ export default class AddRemoveLayout extends React.PureComponent {
   render() {
     return (
       <div>
-        {/* <button onClick={this.onAddItem}>Add Item</button> */}
         <StyledButton type="button" onClick={this.onAddItem}>
           Add Item
         </StyledButton>

@@ -6,26 +6,15 @@ import './playground.css';
 const PictureList = [
   {
     id: 1,
-    text: 'firstName',
+    text: 'image1',
     url: './image-outline-filled.png'
   },
   {
     id: 2,
-    text: 'lastName',
+    text: 'image2',
     url: './image-outline-filled.png'
   }
 ];
-
-{
-  /* <div className="play-row">
-        <div className="column-left">
-          <h1>Column Left</h1>
-        </div>
-        <div className="column-right">
-          <h1>Column Right</h1>
-        </div>
-      </div> */
-}
 
 function PlayDragDrop() {
   const [board, setBoard] = useState([]);
