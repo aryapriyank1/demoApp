@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDrag } from 'react-dnd';
+import image from './image-outline-filled.png';
 
 function Picture({ id, url }) {
   const [{ isDragging }, drag] = useDrag(() => ({
@@ -12,7 +13,7 @@ function Picture({ id, url }) {
   return (
     <img
       ref={drag}
-      src={url}
+      src={image}
       width="150px"
       style={{ border: isDragging ? '5px solid pink' : '0px' }}
     />

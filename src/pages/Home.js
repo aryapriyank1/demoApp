@@ -1,11 +1,13 @@
 import React from 'react';
+import logo from '../components/Home/logo.svg';
+import '../components/Home/home.css';
 
 // const Home = () => {
 function Home() {
   return (
-    <div className="home">
+    <div className="Home">
       <header className="Home-header">
-        <h1>Home</h1>
+        <img src={logo} className="Home-logo" alt="logo" />
       </header>
     </div>
   );
