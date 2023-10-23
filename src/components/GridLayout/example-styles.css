@@ -116,6 +116,7 @@
   opacity: 1;
   width: 70%;
   height: 50%;
+  overflow-y: auto;
 }
 
 .modal-background {

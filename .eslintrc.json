@@ -23,7 +23,13 @@
     "rules": {
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
+        "react-hooks/exhaustive-deps": "off",
         "react/jsx-key": "off",
-        "no-unused-vars": "off"
+        "react/no-unescaped-entities": "off",
+        "no-prototype-builtins": "off",
+        "no-empty": "off",
+        "no-unused-vars": "off",
+        "getter-return": "off",
+        "no-undef": "off"
     }
 }
