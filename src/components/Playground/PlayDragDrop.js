@@ -7,28 +7,13 @@ const PictureList = [
   {
     id: 1,
     text: 'firstName',
-    url: 'https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png'
+    url: './image-outline-filled.png'
   },
   {
     id: 2,
     text: 'lastName',
-    url: 'https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png'
+    url: './image-outline-filled.png'
   }
-  //   {
-  //     id: 3,
-  //     text: 'email',
-  //     url: 'https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png'
-  //   },
-  //   {
-  //     id: 4,
-  //     text: 'phone',
-  //     url: 'https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png'
-  //   },
-  //   {
-  //     id: 5,
-  //     text: 'address',
-  //     url: 'https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png'
-  //   }
 ];
 
 {

@@ -43,11 +43,11 @@ export const NavbarData = [
     path: '/gridlayout',
     icon: <BsIcons.BsGrid1X2 />,
     cName: 'nav-text'
-  },
-  {
-    title: 'SimpleFlex',
-    path: '/simpleflex',
-    icon: <FiIcons.FiLayout />,
-    cName: 'nav-text'
   }
+  // {
+  //   title: 'SimpleFlex',
+  //   path: '/simpleflex',
+  //   icon: <FiIcons.FiLayout />,
+  //   cName: 'nav-text'
+  // }
 ];

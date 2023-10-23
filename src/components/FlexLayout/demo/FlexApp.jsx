@@ -68,7 +68,8 @@ class FlexApp extends React.Component {
             {
               type: 'tabset',
               weight: 50,
-              selected: -1,
+              selected: 1,
+              active: true,
               children: [
                 {
                   type: 'tab',
@@ -528,9 +529,9 @@ class FlexApp extends React.Component {
     return (
       <React.StrictMode>
         <ContextExample.Provider value="from context">
-          <div className="flexapp">
-            <div className="toolbar">
-              {/* <select className="toolbar_control" onChange={this.onSelectLayout}>
+          {/* <div className="flexapp"> */}
+          <div className="toolbar">
+            {/* <select className="toolbar_control" onChange={this.onSelectLayout}>
                 <option value="default">Default</option>
                 <option value="newfeatures">New Features</option>
                 <option value="simple">Simple</option>
@@ -539,13 +540,13 @@ class FlexApp extends React.Component {
                 <option value="complex">Complex</option>
                 <option value="headers">Headers</option>
               </select> */}
-              {/* <button
+            {/* <button
                 className="toolbar_control"
                 onClick={this.onReloadFromFile}
                 style={{ marginLeft: 5 }}>
                 Reload
               </button> */}
-              {/* <div style={{ flexGrow: 1 }}></div>
+            {/* <div style={{ flexGrow: 1 }}></div>
               <span style={{ fontSize: '14px' }}>Realtime resize</span>
               <input
                 name="realtimeResize"
@@ -553,7 +554,7 @@ class FlexApp extends React.Component {
                 checked={this.state.realtimeResize}
                 onChange={this.onRealtimeResize}
               /> */}
-              {/* <select
+            {/* <select
                 className="toolbar_control"
                 style={{ marginLeft: 5 }}
                 onChange={this.onSizeChange}
@@ -573,7 +574,7 @@ class FlexApp extends React.Component {
                 <option value="25px">Size 25px</option>
                 <option value="30px">Size 30px</option>
               </select> */}
-              {/* <select
+            {/* <select
                 className="toolbar_control"
                 style={{ marginLeft: 5 }}
                 defaultValue="light"
@@ -583,37 +584,37 @@ class FlexApp extends React.Component {
                 <option value="gray">Gray</option>
                 <option value="dark">Dark</option>
               </select> */}
-              {/* <button
+            {/* <button
                 className="toolbar_control"
                 style={{ marginLeft: 5 }}
                 onClick={this.onShowLayoutClick}>
                 Show Layout JSON in Console
               </button> */}
-              <div>
-                <StyledButton
-                  type="button"
-                  className="toolbar_control drag-from"
-                  disabled={this.state.adding}
-                  style={{ marginLeft: 5 }}
-                  title="Add using Layout.addTabWithDragAndDrop"
-                  onMouseDown={this.onAddDragMouseDown}
-                  onTouchStart={this.onAddDragMouseDown}>
-                  Drag Tab
-                </StyledButton>
-              </div>
-              <br />
-              <div>
-                <StyledButton
-                  type="button"
-                  className="toolbar_control"
-                  disabled={this.state.adding}
-                  style={{ marginLeft: 5 }}
-                  title="Add using Layout.addTabToActiveTabSet"
-                  onClick={this.onAddActiveClick}>
-                  Add Tab
-                </StyledButton>
-              </div>
-              {/* <button
+            <div>
+              <StyledButton
+                type="button"
+                className="toolbar_control drag-from"
+                disabled={this.state.adding}
+                style={{ marginLeft: 5 }}
+                title="Add using Layout.addTabWithDragAndDrop"
+                onMouseDown={this.onAddDragMouseDown}
+                onTouchStart={this.onAddDragMouseDown}>
+                Drag Tab
+              </StyledButton>
+            </div>
+            <br />
+            <div>
+              <StyledButton
+                type="button"
+                className="toolbar_control"
+                disabled={this.state.adding}
+                style={{ marginLeft: 5 }}
+                title="Add using Layout.addTabToActiveTabSet"
+                onClick={this.onAddActiveClick}>
+                Add Tab
+              </StyledButton>
+            </div>
+            {/* <button
                 className="toolbar_control"
                 disabled={this.state.adding}
                 style={{ marginLeft: 5 }}
@@ -621,9 +622,10 @@ class FlexApp extends React.Component {
                 onClick={this.onAddIndirectClick}>
                 Add Indirect
               </button> */}
-            </div>
-            <div className="contents">{contents}</div>
           </div>
+          {/* <div className="contents">{contents}</div> */}
+          {/* </div> */}
+          <div className="contents">{contents}</div>
         </ContextExample.Provider>
       </React.StrictMode>
     );

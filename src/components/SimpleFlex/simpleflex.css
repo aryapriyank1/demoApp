@@ -27,6 +27,7 @@
 }
 
 .flexlayout__layout {
-  top: 125px;
+  top: 140px;
   overflow: visible;
+  border-top: 1px solid #aaa;
 }
