@@ -8,6 +8,7 @@ const style = {
   backgroundColor: 'white',
   cursor: 'move'
 };
+
 const Component = ({ data, components, path }) => {
   const ref = useRef(null);
 
